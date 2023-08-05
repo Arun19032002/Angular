@@ -1,0 +1,21 @@
+<h2 class="text-center ">Sales forecast</h2>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav "  >
+  
+      <ng-container *ngIf="this.auth.isAuthenticated();else notAuthenticated">
+  
+      </ng-container>
+  
+        <ng-template #notAuthenticated>
+          <li class="nav-item "><a href="javascript:void(0);" routerLink="/register"  class="nav-link" >Sign Up</a></li>
+          <li><a class="nav-link" href="javascript:void(0);" routerLink="/login" >Login</a></li>
+        </ng-template>
+  
+        
+  
+  
+    </ul>
+    
+    </div>
+  </nav>
